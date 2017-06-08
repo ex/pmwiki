@@ -1,0 +1,104 @@
+/* CSS Document */
+/*
+# layout-standard.css  for Gemini skin for pmwiki
+#===============================================================================*/
+/*=== wireframe design aid ====  
+#main { border:2px dashed green}
+#logo {border dotted black}
+#titlebarbox { border:1px dotted red}
+#leftside { border:1px dotted purple}
+#sidebar { border:1px solid red}
+#content { border:1px solid blue}
+#wikitext { border:1px dotted blue}
+#footnav { border:1px solid green} 
+#stdtopnav { background:#ffc}
+#stdtopnav .lnav {background:#efe}
+#stdtopnav .rnav {background:#dfd}*/
+/*=============== Main Layout ================================================*/
+
+body { 	margin:0; padding:0; }
+* html body {width:100%}
+
+.clearer {height:1px; clear:both; margin-top:-1px;} 
+
+#xxxhead, #xxxheader { width:99.5%; }
+#wrapper { width:99.8%; }
+#xxxxwrapper {xwidth:778px; xheight:90%; xborder:2px solid yellow;
+margin-left: auto;
+margin-right: auto;
+width: 778px;
+}
+
+
+/*#sidebarbox { width:180px; }  set with skin.php */
+#sidebar { padding-top:5px }
+
+#stdtopnav { /* position:absolute; top:0; left:0; width:100%;  */
+		float:right;  
+		padding:1px 1em 0.1em 1em;  
+		font-size:1em;
+		text-align:right;
+		line-height:133%;
+		color:#999;
+		}
+* html #stdtopnav { width:auto }
+
+#stdtopnav .lnav { float:left; width:49%;
+		padding:0; margin:1px 0 0 0px; 
+		text-align:left; }
+#stdtopnav .lnav ul {float:left}
+
+#stdtopnav .rnav { float:right; width:49%;
+			padding:0; margin:1px 3px 0 0; 
+			text-align:right; }
+			
+#smltopnav { margin:0;
+		padding:1px 1em 0.1em 1em;  
+		font-size:1em;
+		text-align:right;
+		line-height:133%;
+		color:#999;
+		}
+#smltopnav .lnav { float:left; width:39%;
+		padding:0; margin:1px 0 0 0px; 
+		text-align:left; }
+#smltopnav .lnav ul {float:left}
+
+#smltopnav .rnav { float:right; width:49%;
+			padding:0; margin:1px 3px 0 0; 
+			text-align:right; }
+			
+
+#titlebarbox { margin:0.45em 5px 0px 10px; }
+
+#content { margin: 0 5px 0 10px; 
+		   padding: 1em 2em; 
+		}
+/* hides rule from IE5-Mac \*/
+* html #content { height:1%; } 
+/* End IE5-Mac hack */
+html>body #content { width:auto }
+		
+#wikitext {  } /* do not style */
+
+#footnavbox { margin:0 5px 0.5em 10px; }
+
+#footer {  clear:both;
+		padding:0.3em 1em; 
+		font-size:1em; }
+
+/*============= Group & Title ========================*/
+/* hides rule from IE5-Mac \*/
+* html #titlebar { height:0.01%; } 
+/* End IE5-Mac hack */
+
+#pagegroup { float:left;
+		vertical-align:top;
+		margin:0;		 
+		padding:1.3em 0.5em 0.5em 1em; }		
+#pagetitle h1 {
+		text-align:center;
+		margin:0;
+		padding:0px 0.5em 0.1em 0px; }
+#pagegroup a, #pagetitle a { text-decoration:none; }
+			

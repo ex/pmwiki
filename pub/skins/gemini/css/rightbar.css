@@ -1,0 +1,23 @@
+/* CSS Document */
+/*================ Right Bar ==========================
+# rightbar.css
+# 
+# part of FixFlow skin for Pmwiki
+#======================================================*/
+		
+#rightbar { 
+		/* width:16em;  change RightBar width here*/
+		xxmargin:-1em -1.7em 0.25em 0.5em; /* first value for vertical position, second for right side (not IE) */
+		padding:0 0.5em 0.3em 0.5em;
+		float:right;
+		line-height:1.3em;
+		} 
+*:first-child+html { xxmargin:-1em -0.8em 0.25em 0.5em; } /* for IE 7 */
+* html #rightbar { xxmargin:-1em -0.8em 0.25em 0.5em; } /* for IE 5 +6: increase first value to lower box */
+		 
+		
+#rightbar ul { margin:0.3em 0; padding:0; list-style:none }
+#rightbar li a { margin:0 0 0 0.5em; }
+#rightbar ul ul li a { margin:0 0 0 1.5em; }
+
+

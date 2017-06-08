@@ -1,0 +1,81 @@
+/* CSS Document */
+/*
+#=====================  FONTS  ==========================================
+# font-sans.css
+# 
+# part of the GeminiTwo & FixFlow skin for Pmwiki
+#========================================================================*/
+/*======= Master font sizes =========*/
+body { font-size: 90%; } /*for all parts*/
+
+#header   { font-size: 100%; }
+#titlebar { font-size: 100%; }
+#content  { font-size: 100%; }
+#rightbar { font-size: 75%; } /* percent of #content*/
+#sidebar  { font-size: 85%; }
+#topnav, #stdtopnav, #smltopnav   { font-size: 85%; }
+#footnav  { font-size: 85%; }
+#footer   { font-size: 85%; }
+
+/*=============================*/
+/*monospaced (code) font */
+code, pre { font-family: Courier New, monospace; }
+form textarea { font-size: 1.1em; }
+form input { font-size: 0.9em; }
+ 
+#pagegroup  { font-size: 1em; font-weight:600; 
+		font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; }
+		
+#pagetitle h1  { font-size: 2.2em; font-weight:600; font-style:italic;
+		font-family: "palatino linotype", palatino, "book antiqua", georgia, times, "times new roman", serif; 
+ }
+		
+#content { font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; }
+		
+#content h1, #content h2, #content h3, 
+#content h4, #content h5, #content h6 { 
+		font-style: italic;
+		font-weight:600; 
+		line-height:133%; 
+		font-family:"palatino linotype", palatino, "book antiqua", georgia, times, "times new roman", serif; 
+ }
+#content h1 { font-size:2.1em; }
+#content h2 { font-size:1.9em; border-bottom:1px solid }
+#content h3 { font-size:1.5em; }
+#content h4 { font-size:1.3em; }
+#content h5 { font-size:1.1em; }
+#content h6 { font-size:1.0em; font-variant:small-caps;}
+
+#sidebar h1 { font-size:1.25em; }
+#sidebar h2 { font-size:1.1em; }
+#sidebar h3 { font-size:1.0em; }
+#sidebar h4 { font-size:1.2em; }
+#sidebar h5 { font-size:1.1em; }
+#sidebar h6 { font-size:1.0em; }
+p.sidehead { font-size:1.25em; font-weight:700; }
+
+#topnav, #stdtopnav, #smltopnav, #sidebar, #rightbar, #footnav, #footer { font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; } 
+
+#sidebar h1, #sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6, .sidehead { 
+	font-family: "palatino linotype", palatino, "book antiqua", georgia, times, "times new roman", serif; 
+	font-style:italic; 	font-weight:700; }
+
+#rightbar h1 { font-size:1.7em }
+#rightbar h2 { font-size:1.5em }
+#rightbar h3 { font-size:1.3em }
+#rightbar h4 { font-size:1.2em }
+
+#sideheader { font-size: 220%; } /*to counteract sidebar fontsize*/
+#header, #sideheader { 
+	font-style:italic; font-weight:600; 
+	font-family: "palatino linotype", palatino, "book antiqua", georgia, times, "times new roman", serif;
+}
+#header h1, #header h2, 
+#header h3, #header h4,
+#header h5, #header h6,
+#sideheader h1, #sideheader h2, 
+#sideheader h3, #sideheader h4,
+#sideheader h5, #sideheader h6 { 
+		font-weight:600; margin:0 2px 10px 0;
+		line-height:100%; 
+}

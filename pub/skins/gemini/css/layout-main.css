@@ -1,0 +1,238 @@
+/* CSS Document */
+/*
+#===============================================================================
+# layout-main.css  for Gemini & FixFlow skins for pmwiki
+#===============================================================================
+# Copyright (c) 2006 Hans Bracker. All rights reserved.
+#
+# Defines the CSS for gemini and fixflow skins
+#
+# This file is part of the PmWiki gemini & fixflow skins; you can redistribute it 
+# and/or modify it under the terms of the GNU General Public License as 
+# published by the Free Software Foundation; either version 2 of the License, 
+# or (at your option) any later version.
+#===============================================================================*/
+
+/*================= Content =======================*/
+		
+#content p { font-size:1em }		
+#content h1, h3, h4, h5, h6 {
+		margin:0.3em 0 0.3em 0; }
+#content h2 { margin:0.3em 0 0.5em 0; } /*h2 is underlined and needs more bottom margin*/
+#content ol { list-style-image: none; }
+		
+/*========== Header ===============*/
+#header { padding:10px 5px 5px 5px;  /*logo image padding*/
+			margin:0; line-height:120%; }
+* html #header { height:1%; } /*for IE */
+
+#sideheader {     /*logo image padding*/
+		 }
+#header a, #sideheader a { text-decoration:none }
+
+/*========== PageAction ================*/
+
+/*Fat Erik's Pipelist (adapted)*/
+.nav ul {
+		list-style: none;
+		padding:0;
+		margin: 0;
+		}
+.nav ul li { 
+		display: inline;
+		padding: 0;
+		margin: 0;
+		}
+.nav ul li a { text-decoration:none; padding:0em}
+.nav ul li:before { content: "| "; }
+.nav ul li:first-child:before { content: ""; }
+.nav form { margin:0; display:inline}
+
+/*IE workaround*/
+/*All IE browsers*/
+* html .nav ul li {
+		border-right: 1px solid #999;
+		padding: 0 0.3em 0 0.3em;
+		margin: 0 -0.3em 0 0.3em;
+		}
+/*Win IE browsers - hide from Mac IE\*/
+* html .nav ul { height: 1%; float:right;}
+* html .nav ul li {
+		display: block;
+		float: left;
+		}
+/*End hide*/
+/*Mac IE 5*/
+* html .nav ul li:first-child { border-right: 0; }
+
+/*==================== Left SideBar ======================*/ 
+
+#sidebar { 
+		padding:0 3px 0 3px; 
+		line-height:150%; /* change vertical spacing of items here */
+		}
+* html #sidebar { height:96%}
+
+/*== inputboxes:  searchbox, newpagebox ==*/
+#sidebar form { margin:0;
+				padding:1px 0 3px 3px; }
+html>body #sidebar form  { width: auto; }
+
+.inputbox, .inputbutton { font-size:1em } 
+#sidebar .inputbox { width:9em; }
+.inputbutton { padding:0 3px }
+.inputtext { margin:3px 0; }
+	     
+#sidebar h1, #sidebar h2, #sidebar h3, 
+#sidebar h4, #sidebar h5, #sidebar h6 { 
+		margin: 0;
+		padding:0.5em 0 0.1em 0.5em;
+		}
+#sidebar h1 a, #sidebar h2 a, #sidebar h3 a,
+#sidebar h4 a, #sidebar h5 a, #sidebar h6 a { 
+		display:block; 
+		text-decoration: none;
+		} 
+
+#sidebar p { margin:0; padding-left:0.5em; }	
+.sidehead { padding:0.5em 0 0.1em 0.5em; }
+.sidehead a {  
+		padding-left:0.5em; 
+		margin-left:-0.5em; 
+		display:block;
+		text-decoration: none; 
+		}
+		
+#sidebar ul { margin:0; padding:0; 
+		 	list-style:none; 
+		} 
+			
+/* Fix IE. Hide from IE Mac \*/
+* html #sidebar ul li { float: left; height:1%; }
+* html #sidebar ul li a { height:1%; }
+/* End */ 
+#sidebar ul li { margin: 0; padding-left:0}
+
+#sidebar li a { text-decoration: none;
+		display: block;
+			}
+#sidebar ul li a { padding-left:1em; } 
+#sidebar ul ul li a { padding-left:2em; } /* indent of second-level links */
+html>body #sidebar li a { width: auto; }
+
+html>body #sidebar h1, html>body #sidebar h2, html>body #sidebar h3,
+html>body #sidebar h4, html>body #sidebar h5, html>body #sidebar h6,
+html>body #sidebar h1 a, html>body #sidebar h2 a, html>body #sidebar h3 a,
+html>body #sidebar h4 a, html>body #sidebar h5 a, html>body #sidebar h6 a,
+html>body .sidehead, html>body .sidehead a
+		{ width: auto; } 
+
+#fontsizer { padding:1em 0;
+			font-size:1em; 
+			line-height:133%}
+
+
+#sidebarfooter { 
+		margin:0;
+		padding:1em 0 2em 0.5em; }
+#sidebarfooter ul {
+		margin:0;
+		padding:0 0 0 0; 
+		list-style:none; }
+#sidebarfooter p {  
+		font-size:0.8em; 
+		line-height:130%;
+		font-weight:normal;}
+		
+
+/*================= FootNav ============================*/
+	
+#footnav { padding:5px  }
+
+#footnav ul { margin:0; padding:0 0 1em 2em; list-style:none; }
+#footnav li { float: left;}
+#footnav li a { 
+		display:block;
+		float:left;
+		margin:0 0.2em ; 
+		padding: 2px 0.5em 3px 0.5em;
+		text-decoration:none;
+		text-align:center; 
+		width:auto;}
+#footnav form { margin:0; display:inline; }
+/* not sure if following is necessary for any browser */
+/* hides rule from IE5-Mac \*/
+#footnav li a {float:none;}
+/* End IE5-Mac hack */
+
+/*======== sideheader logo ================*/
+#sideheader { margin:3px; padding:0;}
+#sideheader h1 { 
+		padding:0.4em 0;
+		line-height:130%;
+		display:block; }
+
+/*================== Special =============================*/
+
+
+.wikiaction { margin:0 0 5px 0; }
+#wikiedit form { margin:0; padding:0;}
+#wikiedit form input { margin:5px 0 }
+#wikiedit textarea { width: 99%; margin:5px 0 }
+.wikimessage { color:red !important }
+
+#wikiupload form input { margin:3px 0; }
+#wikiupload table { width:80%;}
+
+.quickref {	padding:5px; 
+		border:1px solid #aaa; 
+		font-size:12px; 
+		font-family:Arial; 
+		}
+
+.newpagebutton { margin:0 3px; }
+
+/* hide link decoration from action links */
+#footnav .createlink { display:none }
+#topnav .createlink { display:none }  
+#topnav a.createlinktext { border-bottom:none; }
+
+#sidebar a:hover.selflink { background:none; color:#000 }
+
+.pits {font-family: times roman; } /* for pmwiki PITS list */
+
+hr, .hr-single { 
+	margin-left:0;
+	border: none 0;
+	border-top: 1px solid #aaa;/*the border*/
+	height: 1px; /* sum of border-top and border-bottom */
+	}
+.hr-double { 
+	margin-left:0;
+	border: none 0; 
+	border-top:1px solid #aaa; /*#003B62; */
+	border-bottom:1px solid #aaa; 
+	background:#fff; 
+	height:3px; 
+	}
+#header a.createlink { display:none; }
+
+.printonly {display:none;}
+@media print {
+  .printonly {display:inline;}
+}
+
+/* fontsizer button styling */
+span.fslinklabel { font-size:0.9em; }
+
+span.fsbox { width:11em; }
+a.fontsizer  { 
+	margin-left:2px;
+	padding:0 4px; 
+	text-decoration:none;
+	font-weight:900; 
+	border-top:1px solid #ccf; 
+	border-left:1px solid #ccf;
+	border-right:1px solid #99c;
+	border-bottom:1px solid #99c;}
+a.fontsizer:hover { background:#f9f9f9;}

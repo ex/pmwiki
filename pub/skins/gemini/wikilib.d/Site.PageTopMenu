@@ -1,0 +1,9 @@
+version=pmwiki-2.2.0-beta15 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+author=Hans
+csum=
+host=127.0.0.1
+name=Site.PageTopMenu
+rev=0
+targets=Site.PageTopMenu,Site.RecentChanges
+text=>>rfloat%3c%3c%0a* %25accesskey=$[ak_edit]%25[[{*$Name}?action=edit | $[Edit Page] ]]%0a* %25accesskey=$[ak_history]%25[[{*$Name}?action=diff | $[Page History] ]]%0a* %25accesskey=$[ak_recentchanges]%25[[{*$Group}.RecentChanges| $[Recent Changes] ]]%0a>>%3c%3c%0a%0a

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>$HTMLTitleFmt</title>
+	$PmWikiCoreStylesFmt
+<!--HTMLHeader-->
+
+</head>
+<body $BodyAttrFmt>
+    <script type='text/javascript' language='javaScript1.2'>
+    <!--
+       document.cookie = 'javascript=1; path=/';
+       if (fontSize) fontSize.fontSizeInit();
+    --></script>
+<div id='wrapper'>
+<div id='head'>
+<!--PageStdTopNavFmt-->
+	<div id='stdtopnav' class='nav'>
+		<!--wiki:$Group.PageTopMenu $SiteGroup.PageTopMenu-->
+		<div class='clearer'><!-- a clearer division --></div>
+	</div>
+<!--/PageStdTopNavFmt-->
+<!--PageHeaderFmt-->
+	<div id='header' class='pageheader'>
+		<!--wiki:$Group.PageHeader $SiteGroup.PageHeader-->
+	</div>
+<!--/PageHeaderFmt-->
+</div>
+	<div class='clearer'><!-- a clearer division --></div>
+
+	<table id='midtbl' width='100%' cellspacing='0' cellpadding='0'>
+		<tr>
+<!--PageLeftFmt-->
+		<td id='sidebarbox' valign='top'>
+			<div id='sidebar'>$CompatibilityNotice
+				<div id='sideheader' class='pageheader'>
+					<!--wiki:$Group.PageHeader $SiteGroup.PageHeader-->
+				</div>
+				<div id='sidebarsearch'><!--markup:(:searchbox label=$[Go] value=$[Search] focus=true:)--></div>
+				<div id='sidebarfontsizer'><!--markup:(:if enabled FontSizer:)(:fontsizer:)(:if:)--></div>
+				<div class='clearer'><!-- a clearer division --></div>
+				<!--wiki:$Group.SideBar $SiteGroup.SideBar-->
+				<div id="sidebarfooter">
+				<!--wiki:$Group.SideBarFooter $SiteGroup.SideBarFooter-->
+			</div>
+		</td>
+<!--/PageLeftFmt-->
+    <td id='main' valign='top' align='left'>
+<!--PageSmlTopNavFmt-->
+	<div id='smltopnav' class='nav'>
+		<!--wiki:$Group.PageTopMenu $SiteGroup.PageTopMenu-->
+		<div class='clearer'><!-- a clearer division --></div>
+	</div>
+<!--/PageSmlTopNavFmt-->
+<!--PageTitleFmt-->
+	<div id='titlebarbox'>
+	 <div id='titlebar'>
+    $GroupTitleFmt
+		<div id='pagetitle'>
+			<!--wiki:$FullName-TitleBar-->$TitleFmt
+		</div>
+	 </div>
+	</div>
+<!--/PageTitleFmt-->
+		<div class='clearer'><!--end of page--></div>
+		<div id='content'>
+<!--PageRightFmt-->
+			<div id='rightbar'><!--wiki:$FullName-RightBar $Group.RightBar $SiteGroup.RightBar--></div>
+<!--/PageRightFmt-->
+<!--PageText-->
+			<div class='clearer'><!-- a clearer division --></div>
+		</div>
+<!--PageFootMenuFmt-->
+		<div id='footnavbox'>
+			<div id='footnav'><!--wiki:$Group.PageFootMenu $SiteGroup.PageFootMenu--></div>
+		</div>
+<!--/PageFootMenuFmt-->
+		</td>
+<!--PageSBRightFmt--><!-- as PageLeftFmt, for placing sidebar right. Only one will be served -->
+		<td id='sidebarbox' valign='top'>
+			<div id='sidebar'>$CompatibilityNotice
+				<div id='sideheader' class='pageheader'> $LogoFmt
+					<!--wiki:$Group.PageHeader $SiteGroup.PageHeader-->
+				</div>
+				<div id='sidebarsearch'><!--markup:(:searchbox label=$[Go] value=$[Search] focus=true:)--></div>
+				<div id='sidebarfontsizer'><!--markup:(:if enabled FontSizer:)(:fontsizer:)(:if:)--></div>
+				<div class='clearer'><!-- a clearer division --></div>
+				<!--wiki:$Group.SideBar $SiteGroup.SideBar-->
+				<div id="sidebarfooter">
+				<!--wiki:$Group.SideBarFooter $SiteGroup.SideBarFooter-->
+			</div>
+		</div> </td>
+<!--/PageSBRightFmt-->
+		</tr>
+	</table>
+<!--PageFooterFmt-->
+	  <div id='footer'><!--wiki:$Group.PageFooter $SiteGroup.PageFooter--></div>
+<!--/PageFooterFmt-->
+</div>
+<!--HTMLFooter-->
+<script type='text/javascript' language='JavaScript1.2'>
+<!--
+    // GeminiSkin adjusting sidebar height (used for some color schemes)
+    // scroll height:
+    var test1 = document.body.scrollHeight;
+    var test2 = document.body.offsetHeight;
+    if (test1 > test2) // all but Explorer Mac
+        { var sy = document.body.scrollHeight }
+    else // Explorer Mac; would also work in Explorer 6 Strict, Mozilla and Safari
+        { var sy = document.body.offsetHeight };
+    // window inner height:
+    if (self.innerHeight) // all except Explorer
+        { var iy = self.innerHeight }
+    else if (document.body) // other Explorers
+        { iy = document.body.clientHeight };
+    var maxy = sy;
+    //header and footer height:
+    var hdr = document.getElementById('head').offsetHeight;
+    var ftr = document.getElementById('footer').offsetHeight;
+    if (iy>sy) { maxy = iy };
+    if (hdr==maxy) { hdr = 0 };
+    var sbr = maxy - hdr - ftr - 12;
+  //testing://  window.alert ("maxy: "+maxy+"; hdr: "+hdr+"; ftr: "+ftr+"; sidebar:"+sbr);
+    if (self.innerHeight) {
+    document.getElementById('sidebar').style.height =  sbr -7 + "px"; }
+    else document.getElementById('sidebar').style.height = sbr -7 + "px";
+-->
+</script>
+</body>
+</html>
